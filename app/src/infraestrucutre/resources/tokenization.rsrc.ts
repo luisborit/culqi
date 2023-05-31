@@ -1,9 +1,8 @@
 import "dotenv/config"
 import jwt  from 'jsonwebtoken'
-import { CardReturnType, CardType } from "../../domain/types/card.type";
+import { CardType } from "../../domain/types/card.type";
 import { TokenizationInterface } from "../../domain/interfaces/tokenization.interface";
 
-//validate card info
 export class Tokenization implements TokenizationInterface {
     generateToken(token:string, secret:string): string {
         const jwtToken = jwt.sign(token, secret);

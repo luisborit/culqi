@@ -1,6 +1,5 @@
 import {createClient} from 'redis'
 import { DatabaseInterface } from '../../domain/interfaces/database.interface';
-import { CardType } from 'app/src/domain/types/card.type';
 
 export class Database implements DatabaseInterface {
     async getConnection(){
