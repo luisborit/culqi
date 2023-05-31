@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "node esbuild.config.js",
-    "dev": "npm run build && nodemon build/main.js --watch build"
+    "dev": "node esbuild.config.js && nodemon build/main.js --watch build",
+    "jester": "npx jest rsrc.test.ts"
   },
   "keywords": [],
   "author": "",
